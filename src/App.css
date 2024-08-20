@@ -1,38 +1,56 @@
 .App {
   text-align: center;
+  background-image: url("https://t3.ftcdn.net/jpg/03/23/12/42/360_F_323124237_SfGqpttZqU2mrMm61VPSWA2tKvc95l9O.jpg");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.login-container,
+.quiz-container {
+  background-color: #96ab0e;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  margin-left: 500px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.login-container button {
+  background-color: #e91e63;
+  border: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.quiz-container .header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.quiz-container .question-section {
+  background-color: #0cd2d2;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.quiz-container .options {
+  margin-top: 20px;
+}
+
+.quiz-container .options button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #4caf50;
+  color: rgb(3, 94, 63);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.quiz-container .options button:hover {
+  background-color: #05119b;
+}
+
+.result h2 {
+  color: #ffeb3b;
 }
